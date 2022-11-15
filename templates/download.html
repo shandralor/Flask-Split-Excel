@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+
+
+{%block maincontent%}
+<h1>Download the split Excel files below:</h1>
+<br/>
+<br/>
+<br/>
+{%for excel in files%}
+<a href="{{url_for('download_excel', excel=excel)}}">{{excel}}</a>
+<br/>
+{%endfor%}
+    
+        {%endblock%}

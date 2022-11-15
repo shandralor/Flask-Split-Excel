@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+
+
+{%block maincontent%}
+<h1>Easily split your Excel file into separate files by sheet!</h1>
+<br/>
+<br/>
+<br/>
+
+<form  method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Select the Excel file you want to use:</label>
+        <input class="form-control" type="file" id="file" name="file">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+        
+
+        {%endblock%}
